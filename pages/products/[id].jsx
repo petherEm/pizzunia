@@ -68,7 +68,7 @@ const Product = ({ pizza }) => {
         <h1 className="text-xl font-bold mt-4">Choose Ingredients</h1>
 
         {pizza.extraOptions.map((option) => (
-          <div className="flex items-center">
+          <div className="flex items-center" key={option.text}>
             <input
               type="checkbox"
               id={option.text}
